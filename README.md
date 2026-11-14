@@ -10,7 +10,7 @@ plugs straight into any USB port for power. No cable, no adapter, no firmware.
 <p align="center">
   <img src="images/catch-the-led-front.png" alt="catch the LED — front" width="100%">
 </p>
-<p align="center"><sub><b>Front</b> — nine 1210 LEDs, the 555 and 4017 as DIP-8 / DIP-16, and the USB-A PCB tongue on the left · black solder mask</sub></p>
+<p align="center"><sub><b>Front</b> — nine 1210 LEDs, the 555 and 4017 as DIP-8 / DIP-16, and the USB-A PCB tongue on the left · black solder mask · LEDs drawn lit, though only one is on at a time</sub></p>
 
 <p align="center">
   <img src="images/catch-the-led-back.png" alt="catch the LED — back" width="100%">
