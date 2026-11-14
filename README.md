@@ -71,36 +71,25 @@ connector is deliberately model-less: it is bare board, not a purchased part.
 ## Repository layout
 
 ```
-catch-the-led/                 final board (v2)
+catch-the-led/                 the board (v2)
   catch-the-led.kicad_pro/-sch/-pcb
-  catch-the-led-*.gbr, *.drl   fabrication output
-proto-1/                       first prototype of the same circuit
-  proto-1.kicad_pro/           project directory (note the nested folder)
-usb-ic/                        placeholder project, no schematic yet
+  gerbers/                     fabrication output — .gbr, .drl, .gbrjob
+  gerbers/catch-the-led_gerber.zip   the same files packed for a fab house
 images/                        renders used in this README
-catch-the-led_gerber.zip       packed gerbers, ready for a fab house
 ```
 
-Both boards share the same 555 + 4017 core. `proto-1` is the earlier
-hand-soldered take: one 330 Ω resistor per LED instead of a shared one, the
-button on a different node, roomier pads, and no reference designators on the
-silkscreen. `catch-the-led` is the finished version.
+## The prototype
 
-<p align="center">
-  <img src="images/proto-1-front.png" alt="proto-1 — front" width="100%">
-</p>
-<p align="center">
-  <img src="images/proto-1-back.png" alt="proto-1 — back" width="100%">
-</p>
-<p align="center"><sub><b>proto-1</b> — the prototype: same 555 + 4017 core, one resistor per LED and a big silk title on the back</sub></p>
+`proto-1` was the first take on this circuit and is not kept here. It had the
+USB pads mirrored, so the board only made contact when plugged in upside-down,
+and one of the LED outputs was left unconnected, so that LED never lit.
+`catch-the-led` fixes both.
 
 ## Opening and fabricating
 
-1. Open `catch-the-led/catch-the-led.kicad_pro` in **KiCad 9** — that project
-   is in the current format. `proto-1` is still in the KiCad 6 format and
-   opens fine, but KiCad will offer to update it on save.
-2. Gerbers and drills are already generated in the project folder, or use
-   `catch-the-led_gerber.zip` at the repo root.
+1. Open `catch-the-led/catch-the-led.kicad_pro` in **KiCad 9**.
+2. Gerbers and drills are already generated in `catch-the-led/gerbers/`; the
+   packed `catch-the-led_gerber.zip` in the same folder is what to send out.
 3. The USB-A tongue is bare board, so it has to be thin enough to slide into
    a port — worth mentioning to the fab when ordering.
 
