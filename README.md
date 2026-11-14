@@ -75,14 +75,15 @@ catch-the-led/                 the board (v2)
   catch-the-led.kicad_pro/-sch/-pcb
   gerbers/                     fabrication output — .gbr, .drl, .gbrjob
   gerbers/catch-the-led_gerber.zip   the same files packed for a fab house
+proto-1/                       first prototype, kept for reference
+  proto-1.kicad_pro/           project files (note the nested folder)
 images/                        renders used in this README
 ```
 
 ## The prototype
 
-`proto-1` was the first take on this circuit and is not kept here. It had the
-USB pads mirrored, so the board only made contact when plugged in upside-down,
-and one of the LED outputs was left unconnected, so that LED never lit.
+`proto-1/` is kept for reference only. It had the USB pads mirrored (it only
+made contact plugged in upside-down) and one LED output left unconnected;
 `catch-the-led` fixes both.
 
 ## Opening and fabricating

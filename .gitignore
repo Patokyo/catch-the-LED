@@ -1,0 +1,6 @@
+# KiCad local state, autosaves and caches — regenerated, never shared
+*.kicad_prl
+*-backups/
+fp-info-cache
+_autosave-*
+*.kicad_sch-bak
