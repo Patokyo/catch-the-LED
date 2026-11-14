@@ -8,6 +8,11 @@ The whole board is a USB-A plug: the tongue of the PCB *is* the connector, so it
 plugs straight into any USB port for power. No cable, no adapter, no firmware.
 
 <p align="center">
+  <img src="images/catch-the-led-chase.gif" alt="catch the LED — the chase in motion" width="100%">
+</p>
+<p align="center"><sub><b>The chase</b> — the 4017 steps one output at a time; green by the plug, then yellow, then red · shown slowed down, it really runs at ~20 Hz</sub></p>
+
+<p align="center">
   <img src="images/catch-the-led-front.png" alt="catch the LED — front" width="100%">
 </p>
 <p align="center"><sub><b>Front</b> — nine 1210 LEDs, the 555 and 4017 as DIP-8 / DIP-16, and the USB-A PCB tongue on the left · black solder mask · LEDs drawn lit, though only one is on at a time</sub></p>
